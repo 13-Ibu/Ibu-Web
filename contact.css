@@ -1,0 +1,154 @@
+#contant::after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.contact-section {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #0f172a, #1e293b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.contact-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(56,189,248,0.1), transparent 70%);
+  animation: pulse-bg 5s infinite ease-in-out;
+  z-index: 1;
+}
+
+@keyframes pulse-bg {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.1); opacity: 0.5; }
+}
+
+.contact-wrapper {
+  position: relative;
+  background: #0f172a;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(56,189,248,0.3);
+  z-index: 2;
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #38bdf8;
+}
+
+.contact-form .form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #38bdf8;
+  background: transparent;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-form label {
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  color: #94a3b8;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.contact-form input:focus + label,
+.contact-form input:valid + label,
+.contact-form textarea:focus + label,
+.contact-form textarea:valid + label {
+  top: -12px;
+  left: 10px;
+  font-size: 0.8rem;
+  color: #38bdf8;
+  background: #0f172a;
+  padding: 0 5px;
+}
+
+.send-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #0f172a;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #38bdf8;
+}
+
+.send-btn:hover {
+  background: #0ea5e9;
+  box-shadow: 0 0 20px #38bdf8;
+}
+
+.contact-social {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.contact-social a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #38bdf8;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-social a:hover {
+  transform: scale(1.3);
+  color: #0ea5e9;
+}
+
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.contact-wrapper {
+  position: relative;
+  z-index: 2;
+}
+.contact-glow {
+  z-index: 1;
+}
+
+.contact-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}

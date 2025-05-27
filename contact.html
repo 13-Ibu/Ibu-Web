@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Contact Us</title>
+  
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="contact.css" type="text/css" media="all" />
+  
+  <script src="https://kit.fontawesome.com/eb6e88285c.js" crossorigin="anonymous"></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar (same as homepage) -->
+  <div class="navber">
+    <a href="index.html" class="logo"><img src="logo.png" alt="logo"></a>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <div class="nav_icon">
+        <span></span><span></span><span></span>
+      </div>
+    </label>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="memories.html">Memories</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" id="contant">Contact</a></li>
+    </ul>
+  </div>
+
+<!-- Contact Section -->
+<section class="contact-section">
+  <div class="contact-glow"></div>
+  
+
+  <div class="contact-wrapper">
+    <h2 class="contact-title">Let's Connect</h2>
+
+    <form class="contact-form" action="https://formspree.io/f/xnndkeor" method="POST">
+      <div class="form-group">
+        <input type="text" name="name" required />
+        <label>Your Name</label>
+      </div>
+
+      <div class="form-group">
+        <input type="email" name="_replyto" required />
+        <label>Your Email</label>
+      </div>
+
+      <div class="form-group">
+        <textarea name="message" rows="6" required></textarea>
+        <label>Your Message</label>
+      </div>
+
+      <button type="submit" class="send-btn">Send Message</button>
+    </form>
+
+    <div class="contact-social">
+      <a href="https://www.facebook.com/na.i.mu.270218?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/naim_islam2899/profilecard/?igsh=ZG82bjV6NDkzcGc2" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/naimislame" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</section>
+<p>💌This form is actually work not for show up !</p>
+<!-- Particle Background -->
+
+  <!-- Footer (same as homepage) -->
+  <footer class="footer">
+    <p><i class="fas fa-heart"></i> Forever in our hearts, Ibrahim</p>
+    <p>Made with love by your friend, <strong>Naim</strong></p>
+    <p>Website created with passion, memories & code.</p>
+    <p>Contact: <a href="mailto:naimislam2899@gmail.com">naimislam2899@gmail.com</a></p>
+    <p>© 2025</p>
+  </footer>
+
+  <script src="contact.js"></script>
+  
+  <!-- tsParticles CDN -->
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@3.0.4/tsparticles.bundle.min.js"></script>
+<script>
+  tsParticles.load("tsparticles", {
+    fullScreen: { enable: false },
+    particles: {
+      number: { value: 60 },
+      color: { value: "#38bdf8" },
+      shape: { type: "circle" },
+      opacity: {
+        value: 0.3,
+        random: true
+      },
+      size: {
+        value: 3,
+        random: true
+      },
+      move: {
+        enable: true,
+        speed: 1,
+        direction: "none",
+        outModes: { default: "out" }
+      },
+      links: {
+        enable: true,
+        distance: 150,
+        color: "#38bdf8",
+        opacity: 0.2,
+        width: 1
+      }
+    },
+    background: {
+      color: "#0f172a"
+    }
+  });
+</script>
+  
+</body>
+</html>

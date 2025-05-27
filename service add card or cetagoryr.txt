@@ -1,0 +1,16 @@
+<section class="tool-category" data-aos="fade-up">
+  <h2 class="category-title"> CetagoryTitle </h2>
+  
+  <!-- Paste your current service cards here -->
+  <div class="services-container">
+    
+    <div class="service-card">
+      <i class=" service-icon"></i>
+      <h3> CardTitle </h3>
+      <p> CardInfo </p>
+      <a href="https://www.ccleaner.com/" target="_blank" class="service-button">Visit</a>
+    </div>
+    
+    
+  </div>
+</section>
